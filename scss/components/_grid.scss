@@ -1,0 +1,33 @@
+//grid layout extends
+
+
+
+.grid__col--12.theme__colors {
+    @extend %grid__col--12;
+    background-color: $color-col-6;
+}
+.grid__col--6.theme__colors {
+    @extend %grid__col--12;
+    background-color: $color-col-6;
+}
+.grid__col--4.theme__colors {
+    @extend %grid__col--12;
+    background-color: $color-col-4;
+}
+.grid__col--3.theme__colors {
+    @extend %grid__col--12;
+    background-color: $color-col-3;
+}
+.grid__col--5.theme__colors {
+    @extend %grid__col--12;
+    background-color:$color-col-5;
+}
+.grid__col--7.theme__colors {
+    @extend %grid__col--12;
+    background-color:$color-col-7;
+}
+.grid__col--8.theme__colors {
+    @extend %grid__col--12;
+    background-color: #a9f7c3;
+}
+//desktop version
