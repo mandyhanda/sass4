@@ -3,27 +3,6 @@
 @import "base/index";
 
 
-//mixins
-
-
-//extends
-
-//layout
-
-.container
-{
-    @include center;
-}
-.grid__row
-{
-   
-    @include flexbox
-    {
-        font-size: 1.1rem;
-         margin: 20px 0;
-        flex-direction: $col;
-}
-}
 
 
 
@@ -39,105 +18,7 @@
 
 
 
-//destop version
-@media (min-width:$break-l)
-{
-    .grid__row
-    {
-        @include flexbox
-        {
-        flex-direction: row;
-        justify-content: $just-space-around;
-    }
-    }
-    .nav
-    {
-        display: flex;
-        flex-direction: row;
-    }
-    .nav__item a {
-        font-size: 20px;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 10px;
-        font-weight: 500;
-        color: #817c7c;
-        display: block;
-    }
-   
 
+   
  
 
-//grid layout
-.grid__col--8
-{
-    flex-basis: 60%;
-}
-.grid__col--4
-{
-    flex-basis: 30%;
-}
-.grid__col--12 {
-    flex-basis: 100%;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
-.grid__col--12.theme__colors {
-   
-    @include desk_grid{
-    background:$color-col-12;;
-}
-   
-}
-.grid__col--6.theme__colors {
-    @include desk_grid{
-    flex: 1 46%;
-   background:$color-col-6;
-    }
-}
-.grid__col--4.theme__colors {
-    @include desk_grid{
-    flex: 1 27.3333333333%;
-    background-color:$color-col-4;
-    }
-}
-.grid__col--3.theme__colors {
-    @include desk_grid{
-    flex: 1 17%;
-    background-color:$color-col-3;
-    }
-}
-.grid__col--5.theme__colors {
-    @include desk_grid{
-    flex: 1 30%;
-    background-color:$color-col-5;
-    }
-}
-.grid__col--7.theme__colors {
-    @include desk_grid{
-    flex: 1 65%;
-    background-color:$color-col-7;
-    }
-}
-.grid__col--8.theme__colors {
-    @include desk_grid{
-    flex: 1 46%;
-    background-color:$color-col-8;
-    }
-}
-.grid__col--7.theme__colors.centered {
-    @include desk_grid{
-    max-width: 60%;
-    margin: auto;
-    margin-top: 5px;
-    }
-}
-.grid__col--7.theme__colors.centered {
-    @include desk_grid{
-    flex: 1 90%;
-    background-color:$color-col-7;
-    }
-}
-}
